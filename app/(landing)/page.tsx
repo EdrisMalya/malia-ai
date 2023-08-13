@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const LandingPage = () => {
     return (
-        <div>
-            <div>Landing Page</div>
+        <div className={'flex items-center h-screen justify-center'}>
+            <div>This is malia AI website</div>
             <div>
                 <Link href={'/sign-in'}>
                     <Button>
