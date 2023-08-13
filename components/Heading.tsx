@@ -1,4 +1,3 @@
-import {Head} from "next/document";
 import {cn} from "@/lib/utils";
 
 interface HeadingProps {
@@ -7,7 +6,7 @@ interface HeadingProps {
     icon: any,
     bgColor?: string
 }
-const Heading = ({title, description, icon, bgColor}: Head) => {
+const Heading = ({title, description, icon, bgColor}: HeadingProps) => {
     return (
         <div className="px-4 lg:px-8 flex items-center gap-x-3 mb-8">
             <div className={cn('p-2 w-fit rounded-lg', bgColor)}>
